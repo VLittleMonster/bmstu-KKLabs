@@ -1,0 +1,20 @@
+[A,B,C,D] [a,b,c] A
+A -> A a | a | B
+B -> C b 
+C -> B c
+D -> A
+
+[A] [a] A
+A -> a A
+
+[A,B] [a,b] A
+A -> B a | a
+B -> A b | b
+
+[A] [+,-,a] A
+A -> A + A | A - A | a
+
+[A,B,C] [a,b,c] A
+A -> A a | a
+B -> C b 
+C -> B c
